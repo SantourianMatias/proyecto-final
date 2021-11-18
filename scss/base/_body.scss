@@ -1,0 +1,11 @@
+@import "../components/variables";
+/* Body */
+body {
+
+    background-image: radial-gradient(circle at 50% 50%, #9f827f 0, #907978 25%, #7f7070 50%, #6f6767 75%, #605e5e 100%);
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+}

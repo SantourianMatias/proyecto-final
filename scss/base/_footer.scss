@@ -1,0 +1,15 @@
+@import "../components/listas";
+
+/* Footer */
+.tituloUltimo{
+    display: flex;
+    align-items: center;
+    justify-content: nth($justify, 1);
+    margin-top: 50px;
+    color: white;
+    background-color: black;
+    
+    img{
+        margin: 2rem;
+    }
+}

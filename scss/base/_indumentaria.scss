@@ -1,0 +1,65 @@
+@import "../components/listas";
+
+/* Sección uno Indumentaria */
+.titulos {
+    @extend %titulos;
+    text-align: nth($textAlign, 2);
+    justify-content: nth($justify, 2);
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+/* Sección dos Indumentaria */
+.parrafo {
+    @extend %parrafo;
+    text-align: nth($textAlign, 1);
+
+    .imagenes {
+        display: nth($display, 1);
+        @extend %imagenes;
+        grid-template-columns: repeat(3, 1fr);
+
+
+        .imagenGrid:hover {
+            transform: scale(2);}
+
+
+            .imagenGrid {
+                transition: all 1.5s;
+                img {
+                    border: solid black 4px;
+                }
+            }
+
+    }
+
+
+}
+
+/* Sección tres Indumentaria */
+.infotalles {
+    @extend %titulos;
+    text-align: nth($textAlign, 2);
+    justify-content: nth($justify, 1);
+    margin-top: 100px;
+    margin-bottom: 80px;}
+
+    .talle {
+        display: nth($display, 1);
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        margin-left: 450px;
+
+        .tallesGrid:hover {
+            transform: scale(1.5);}
+
+
+            .tallesGrid {
+                transition: all 1.5s;
+                img {
+                    border: 4px black solid;
+                }
+            }
+
+    }
