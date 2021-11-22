@@ -2,21 +2,14 @@
 /* Header */
 header {
 
-    .ancho {
-        width: 70px;
-    
-        .titulo {
-            color: black;
-            text-decoration: underline;
-            text-align: nth($textAlign, 2);
-            font-family: 'Roboto', sans-serif;   
-            display: nth($display, 1);
-            flex-direction: row;
-            position: static;
-            justify-content: nth($justify, 1);
-            margin-top: 25px;
-            margin-bottom: 10px;}
-    
+    .tituloPrincipal {
+        font-size: 4rem;
+        text-align: nth($textAlign, 1);
+        margin-top: 2rem;
     }
 
+    .ancho {
+        width: 70px;
+
+}
 }
