@@ -1,24 +1,40 @@
 @import "../components/listas";
 
 /* Sección uno Indumentaria */
-.titulos {
+.tituloIndumentaria {
     @extend %titulos;
-    text-align: nth($textAlign, 2);
-    justify-content: nth($justify, 2);
-    margin-top: 50px;
-    margin-bottom: 50px;
+    text-align: nth($textAlign, 1);
+    justify-content: nth($justify, 1);
+    margin-top: 60px;
+    margin-bottom: 100px;
+    font-size: 4rem;
 }
 
+.tituloProductos {
+    font-size: 4rem;
+    justify-content: nth($justify, 1);
+    text-align: nth($textAlign, 1);
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.parrafoProductos {
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    text-align: nth($textAlign, 1);
+    justify-content: nth($justify, 1);
+    font-size: 2rem;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
 
 /* Sección dos Indumentaria */
-.parrafo {
-    @extend %parrafo;
-    text-align: nth($textAlign, 1);
-
     .imagenes {
         display: nth($display, 1);
         @extend %imagenes;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
 
 
         .imagenGrid:hover {
@@ -31,25 +47,23 @@
                     border: solid black 4px;
                 }
             }
+        }
 
-    }
 
 
-}
 
 /* Sección tres Indumentaria */
-.infotalles {
+.talleIndumentaria {
     @extend %titulos;
-    text-align: nth($textAlign, 2);
+    text-align: nth($textAlign, 1);
     justify-content: nth($justify, 1);
     margin-top: 100px;
     margin-bottom: 80px;}
 
-    .talle {
+    .tallesIndumentaria {
         display: nth($display, 1);
         grid-template-columns: repeat(2, 1fr);
         gap: 30px;
-        margin-left: 450px;
 
         .tallesGrid:hover {
             transform: scale(1.5);}
