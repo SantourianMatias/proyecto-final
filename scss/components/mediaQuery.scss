@@ -2,15 +2,173 @@
 /* Mobile */
 @media screen and (max-width: 480px) {
 
-    .titulo{
-        margin: 2rem;
+    
+    .parrafoCalzado {
+        font-size: 1.5rem;
+        text-align: center;
     }
 
+    .parrafoCalzado1 {
+        text-align: center;
+        font-size: 2rem;
+    }
+    
+    .titulo{
+        margin: 4rem;
+        text-align: left;
+    }
+
+    .tituloProductos {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .parrafoProductos {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+
     .imagenes {
-        @extend %imagenes;
+        gap: 50px;
         display: nth($display, 2);
         grid-template-columns: repeat(1, 1fr);
+        margin-left: 0;
         align-items: center;
+        justify-items: center;
+    
+        .imagenGrid {
+            transition: all 1.5s;
+        }
+    
+        .imagenGrid:hover {
+            transform: scale(0);
+        }
+    
+     }
+
+
+     .tecalzado {
+        color: black;
+        font-family: 'Roboto', sans-serif;
+        text-decoration: underline;
+        margin-bottom: 115px;
+        margin-top: 100px;
+        text-align: nth($textAlign, 1);
+    }
+    
+    .talles {
+        display: nth($display, 2);
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        margin-left: 0;
+        justify-items: center;
+    
+        .talleGrid:hover {
+            transform: scale(0);
+        
+            .talleGrid {
+                transition: all 1.5s;
+                margin-left: 0;
+                img {
+                    border: 4px solid black;
+                }
+            }
+        }
+
+        .talleIndumentaria {
+            text-align: nth($textAlign, 1);
+            justify-content: nth($justify, 1);
+            margin-top: 100px;
+            margin-bottom: 115px;}
+        
+            .tallesIndumentaria {
+                display: nth($display, 1);
+                grid-template-columns: repeat(1, 1fr);
+                gap: 30px;
+                justify-items: center;
+
+        }
+
+        .tallesGrid:hover {
+            transform: scale(0);
+
+            .tallesGrid {
+                transition: all 1.5s;
+                margin-left: 0;
+                img {
+                    border: 4px black solid;
+                }
+            }
+
+        }
+
+    }
+
+
+        .contact_form{  
+            width: 300px;  
+          }
+
+          input{ 
+            width: 250px; 
+          }
+          
+
+          textarea{
+            width: 250px; 
+          }
+
+          button{
+            width: 250px;   
+          }
+
+
+          .tituloPrincipal {
+              margin-bottom: 50px;
+              font-size: 2rem;
+          }
+          
+
+    }
+
+
+/* Tablet */
+@media screen and (min-width: 481px) and (max-width: 1000px) {
+    
+    .parrafoCalzado {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .parrafoCalzado1 {
+        text-align: center;
+        font-size: 2rem;
+    }
+    
+    .titulo{
+        margin: 4rem;
+        text-align: left;
+    }
+
+    .tituloProductos {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .parrafoProductos {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+
+    .imagenes {
+        gap: 50px;
+        display: nth($display, 2);
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 0;
+        align-items: center;
+        justify-items: center;
     
         .imagenGrid {
             transition: all 1.5s;
@@ -20,16 +178,64 @@
             transform: scale(1);
         }
     
-    
+     }
+
+
+     .tecalzado {
+        color: black;
+        font-family: 'Roboto', sans-serif;
+        text-decoration: underline;
+        margin-bottom: 115px;
+        margin-top: 100px;
+        text-align: nth($textAlign, 1);
     }
+    .talles {
+        display: nth($display, 2);
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        margin-left: 0;
+        justify-items: center;
+    
+        .talleGrid:hover {
+            transform: scale(1);
+        }
+        
+            .talleGrid {
+                transition: all 1.5s;
+                margin-left: 0;
+                img {
+                    border: 4px solid black;
+                }
+            }
+
+        }
 
 
-}
+        .contact_form{  
+            width: 300px;  
+          }
+
+          input{ 
+            width: 250px; 
+          }
+          
+
+          textarea{
+            width: 250px; 
+          }
+
+          button{
+            width: 250px;   
+          }
 
 
-/* Tablet */
-@media screen and (min-width: 481px) and (max-width: 1000px) {
-}
+          .tituloPrincipal {
+              margin-bottom: 50px;
+              font-size: 2rem;
+          }
+          
+
+    }
 
 /* Desktop */
 @media screen and (min-width: 1001px) {
