@@ -53,17 +53,22 @@
 
 
 /* Sección tres Indumentaria */
-.talleIndumentaria {
+.teIndumentaria {
     @extend %titulos;
     text-align: nth($textAlign, 1);
     justify-content: nth($justify, 1);
     margin-top: 100px;
-    margin-bottom: 80px;}
+    margin-bottom: 80px;
+    align-items: center;
+
+}
 
     .tallesIndumentaria {
         display: nth($display, 1);
         grid-template-columns: repeat(2, 1fr);
         gap: 30px;
+        justify-items: center;
+        align-items: center;
 
         .tallesGrid:hover {
             transform: scale(1.5);}

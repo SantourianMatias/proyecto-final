@@ -58,14 +58,14 @@
     
 
 /* Sección tres calzado */
-.tecalzado {
+.teCalzado {
     @extend %titulos;
     margin-bottom: 150px;
     margin-top: 150px;
     text-align: nth($textAlign, 1);
 }
 
-    .talles {
+    .talleCalzado {
         display: nth($display, 2);
         grid-template-columns: repeat(3, 1fr);
         gap: 20px;
@@ -73,11 +73,11 @@
         justify-items: center;
         margin-left: 250px;
     
-        .talleGrid:hover {
+        .talleCalzadoGrid:hover {
             transform: scale(2);
         }
         
-            .talleGrid {
+            .talleCalzadoGrid {
                 transition: all 1.5s;
                 img {
                     border: 4px solid black;

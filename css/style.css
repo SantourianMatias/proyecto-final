@@ -46,17 +46,20 @@
 }
 
 /* Sección tres Indumentaria */
-.talleIndumentaria {
+.teIndumentaria {
   text-align: center;
   justify-content: center;
   margin-top: 100px;
   margin-bottom: 80px;
+  align-items: center;
 }
 
 .tallesIndumentaria {
   display: flex;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
+  justify-items: center;
+  align-items: center;
 }
 .tallesIndumentaria .tallesGrid:hover {
   transform: scale(1.5);
@@ -125,13 +128,13 @@ header .ancho {
 }
 
 /* Sección tres calzado */
-.tecalzado {
+.teCalzado {
   margin-bottom: 150px;
   margin-top: 150px;
   text-align: center;
 }
 
-.talles {
+.talleCalzado {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
@@ -139,13 +142,13 @@ header .ancho {
   justify-items: center;
   margin-left: 250px;
 }
-.talles .talleGrid:hover {
+.talleCalzado .talleCalzadoGrid:hover {
   transform: scale(2);
 }
-.talles .talleGrid {
+.talleCalzado .talleCalzadoGrid {
   transition: all 1.5s;
 }
-.talles .talleGrid img {
+.talleCalzado .talleCalzadoGrid img {
   border: 4px solid black;
 }
 
@@ -286,7 +289,7 @@ body html {
   gap: 25px;
 }
 
-.tituloIndumentaria, .talleIndumentaria, .titulosCalzado, .tecalzado {
+.tituloIndumentaria, .teIndumentaria, .titulosCalzado, .teCalzado {
   color: black;
   font-family: "Roboto", sans-serif;
   text-decoration: underline;
