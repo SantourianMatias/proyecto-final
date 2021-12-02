@@ -67,23 +67,16 @@
 
     .talleCalzado {
         display: nth($display, 2);
-        grid-template-columns: repeat(3, 1fr);
-        gap: 20px;
-        text-align: nth($textAlign, 1);
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
         justify-items: center;
-        margin-left: 250px;
-    
-        .talleCalzadoGrid:hover {
-            transform: scale(2);
-        }
+        align-items: center;
+                
         
-            .talleCalzadoGrid {
-                transition: all 1.5s;
-                img {
-                    border: 4px solid black;
+        img {
+            border: 4px solid black;
                 }
-            }
-
-        }
+           
+    }
 
         
