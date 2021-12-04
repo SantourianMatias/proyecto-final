@@ -27,7 +27,7 @@
   justify-content: center;
   font-size: 2rem;
   flex-direction: column;
-  margin-bottom: 100px;
+  margin-bottom: 150px;
 }
 
 /* Sección dos Indumentaria */
@@ -46,20 +46,23 @@
 }
 
 /* Sección tres Indumentaria */
-.teIndumentaria {
-  text-align: center;
-  justify-content: center;
-  margin-top: 130px;
-  margin-bottom: 100px;
+.indumentariaTres {
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  align-content: center;
+}
+
+.teIndumentaria {
+  margin-top: 150px;
+  margin-bottom: 150px;
+  font-size: 4rem;
 }
 
 .tallesIndumentaria {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  flex-direction: row;
   gap: 10px;
-  justify-items: center;
-  align-items: center;
 }
 .tallesIndumentaria img {
   border: solid black 4px;
@@ -73,6 +76,11 @@ header .tituloPrincipal {
 }
 header .ancho {
   width: 70px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
 }
 
 .nav {
@@ -122,18 +130,25 @@ header .ancho {
 }
 
 /* Sección tres calzado */
+.calzadoTres {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-items: center;
+  justify-content: center;
+}
+
 .teCalzado {
   margin-bottom: 150px;
   margin-top: 150px;
-  text-align: center;
+  font-size: 4rem;
 }
 
 .talleCalzado {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 5px;
-  justify-items: center;
-  align-items: center;
 }
 .talleCalzado img {
   border: 4px solid black;
@@ -189,7 +204,7 @@ body html {
   flex-direction: column;
   font-size: 25px;
   margin-top: 100px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .subTitulos {
@@ -200,7 +215,7 @@ body html {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-size: 25px;
 }
 
@@ -276,7 +291,7 @@ body html {
   gap: 25px;
 }
 
-.tituloIndumentaria, .teIndumentaria, .titulosCalzado, .teCalzado {
+.tituloIndumentaria, .teIndumentaria, .titulosCalzado, .teCalzado, .tituloPrimero, .subTitulos {
   color: black;
   font-family: "Roboto", sans-serif;
   text-decoration: underline;
@@ -411,9 +426,18 @@ p {
 /* Dispositivos */
 /* Mobile */
 @media screen and (max-width: 480px) {
+  .titulosCalzado {
+    margin-bottom: 25px;
+  }
+
+  .tituloIndumentaria {
+    margin-bottom: 70px;
+  }
+
   .parrafoCalzado {
     font-size: 1.5rem;
     text-align: center;
+    margin-bottom: 60px;
   }
 
   .parrafoCalzado1 {
@@ -434,6 +458,7 @@ p {
   .parrafoProductos {
     font-size: 1.5rem;
     text-align: center;
+    margin-bottom: 60px;
   }
 
   .imagenes {

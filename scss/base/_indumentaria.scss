@@ -27,7 +27,7 @@
     justify-content: nth($justify, 1);
     font-size: 2rem;
     flex-direction: column;
-    margin-bottom: 100px;
+    margin-bottom: 150px;
 }
 
 /* Sección dos Indumentaria */
@@ -53,25 +53,32 @@
 
 
 /* Sección tres Indumentaria */
-.teIndumentaria {
-    @extend %titulos;
-    text-align: nth($textAlign, 1);
-    justify-content: nth($justify, 1);
-    margin-top: 130px;
-    margin-bottom: 100px;
+.indumentariaTres {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-
+    align-content: center;
 }
 
+.teIndumentaria {
+    @extend %titulos;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    font-size: 4rem;}
+
+
     .tallesIndumentaria {
-        display: nth($display, 2);
-        grid-template-columns: repeat(2, 1fr);
+        display: flex;
+        flex-direction: row;
         gap: 10px;
-        justify-items: center;
-        align-items: center;
+
 
         img {
             border: solid black 4px;
+    
         }
         
     }
+
+
+

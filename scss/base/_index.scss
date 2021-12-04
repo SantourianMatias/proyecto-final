@@ -35,7 +35,8 @@
     flex-direction: column;
     font-size: 25px;
     margin-top: 100px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+    @extend %titulos;
 }
 
 .subTitulos {
@@ -46,8 +47,9 @@
     display: nth($display, 1);
     align-items: center;
     flex-direction: column;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     font-size: 25px;
+    @extend %titulos;
 }
 
 .parrafos {
